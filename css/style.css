@@ -1,53 +1,256 @@
 *{
 	font-family:'helvetica';
-	color:#555;
+	color:#333;
 	box-sizing: border-box;
-	/* this is a comment */
+	margin:0px;
 }
+
 
 body{
-	padding:60px;
-	background: #9BDEFB url(http://weknowyourdreams.com/images/ocean/ocean-04.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center 120%;
-	background-attachment: fixed;
+	background: #ddd ;
+
 }
 
-h2 {
-	color:#D43D94;
+/*nav*/
+header {
+	position: relative;
+	height:60px;
+	background-color: #383F51;
 }
 
-#subhead, h6, p{color:#fff;}
-
-#makeblue{
-	color:#00f;
+#logo{
+	height:100%;
+	padding:5px;
+	
 }
 
-.group1{ color:#f00; }
+nav{
+	position:absolute;
+	right:0px;
+	top:0px;
+	padding:0px;
+	margin:0px;
+}
 
-li.group1{
-	color:#000;
+nav > ul{
+	margin:10px;
+}
+
+nav li ul{
+	display:none;
+}
+
+nav li:hover ul, nav ul li li{
+	display:block;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+}
+
+nav ul li ul{
+	margin:0px;
+	padding:0px;
+}
+
+nav a{
+	color:#DDDBF1;
+	background-color: #383F51;
+	background: linear-gradient( -45deg, #383F51,#3C4F76 30%, #3C4F76 70%, #383F51);
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	width:100px;
+	text-align: center;
+	border:1px solid #DDDBF1;
+}
+
+nav a:hover{
+	background: #DDDBF1;
+	color: #383F51;
+}
+
+#mainContent{
+	width:960px;
+	margin:0px auto 0px auto;
+	background-color: #DDDBF1;
+}
+
+#mainContent div{
+	border:1px solid #fff;
+}
+
+#mainContent > div{
+	padding:20px;
+	width:33%;
+	display: block;
+	float:left;
+}
+
+.firstpara, td {
+	color:#3C4F76;
+}
+
+td{
 	font-weight:bold;
+}
+
+td[rowspan="2"]{
+	background-color:#D1BEB0;
+}
+
+td[rowspan="2"] + td {
+	background-color:#D1BEB0;
+}
+
+td[rowspan="2"] ~ td {
+	padding: 15px;
+}
+
+.btn, .btn:focus, .btn:visited, .btn:active {
+	display:inline-block;
+	padding:10px;
+	background-color:#383F51;
+	color:#fff;
+	text-decoration: none;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color:#383F51;
+}
+
+#mainContent div:first-of-type{
+	background-color: #AB9F9D;
+}
+
+#mainContent div:first-child{
+	padding:40px;
+}
+
+#mainContent div:last-of-type{
+	background-color: #AB9F9D;
+}
+
+#mainContent div:last-child{
+	padding:40px;
+}
+
+tr{
+	background-color: #fff;
+}
+
+tr:nth-child(1){
+	background-color: #D1BEB0;
+}
+
+tr:nth-child(odd){
+	background-color: #DDDBF1;
+}
+
+#mainContent > div > div{
+	display:inline-block;
+	padding: 10px!important;
+	vertical-align: top;
+}
+
+h2 img{
+	width:40px;
+	height:30px;
+	padding-right: 10px;
+	vertical-align: top;
+	opacity: .5;
+}
+
+h2 img:hover{
+	opacity:1;
+}
+
+/*
+#mainContent:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+*/
+
+/*cascade experiment*/
+h6{
+	font-size:10px;
+}
+
+h6{
+	font-size:30px;
+}
+
+.cascading{
+	font-size:30px;
+}
+
+#cascade{
 	font-size:50px;
 }
 
-div p{
-	color:black;
+div h6{
+	font-size:20px;
 }
 
-#poppa {
+html body div #cascade{
+	font-size: 40px;
+}
+
+div .cascading{
 	font-size:30px;
 }
 
-#poppa li{
-	color:#000;
+div #cascade{
+	font-size:80px;
 }
 
-#poppa > ul > li > ul > li{
-	color:#f00;
+h6{
+	font-size: 20px!important;
 }
 
-.group1 + h5{
-	font-size:30px;
+#contain{
+	width:50%;
+	margin:0px auto;
+	background-color: #D1BEB0;
+	padding:40px;
+	height:50vh;
+	min-width:400px;
+	max-width:450px;
+	min-height: 200px;
+	max-height: 250px;
+}
+
+.content{
+	width:calc(100% - 40px);
+	background-color:#DDDBF1;
+	border:20px solid #fff;
+	margin:0px 20px;
+	height: 100%;
+	padding:10px;
+	overflow-y:scroll;
+	overflow-x: hidden;
+	box-shadow: 0px 10px 10px 10px rgba(0,0,0,.25);
+}
+
+#contain h2{
+	text-shadow:0px 0px 10px rgba(0,0,0,.25);
+}
+
+#testonflex1{
+    background-image:url(../img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 120%;
+	background-attachment: fixed;
+	display:flex;
+	height:30vh;
+	align-items: center;
+    justify-content: center;
+    
+
 }
