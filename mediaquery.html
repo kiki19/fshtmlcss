@@ -1,61 +1,67 @@
 <!doctype html>
 <html>
-	<head>
-		<title>My Awesome Site</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-<!--        
-        <link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">
-		<style>
-			h1{
-				font-family: 'Griffy', cursive;
-			}
-            .column{
-                float: left;
-                padding:20px;
-            }
-            #c1{width:25%;}
-            #c2{width: 75%}
-            
-            @media screen and (max-width: 700px){
 
-                .column{float:none;}
-
-                #c1, #c2{width:100%;}
+<head>
+	<title>My Awesome Site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">
+	<style>
+		h1 {
+			font-family: 'Griffy', cursive;
+		}
 		
-            }
-		</style>
--->
-	</head>
-	<body>
-<header>
-	<img id="logo" src="img/logo.png">
-	<nav>
-		<ul>
-			<li><a href="">Home</a></li>
-			<li><a href="">Portfolio</a>
-				<ul>
-					<li><a href="">Web Design</a></li>
-					<li><a href="">Web Dev</a></li>
-				</ul>
-			</li>
-			<li><a href="">Contact</a></li>
-		</ul>
-	</nav>
-</header>
-        <h1 class="text-align:center;">This is a custom font</h1>
-        <div class="column" id="c1">
-            <h1>this is column 1</h1>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="column"  id="c2">
-            <h1>this is column 2</h1>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <br style="clear:both;">
-	</body>
+		.column {
+			float: left;
+			padding: 20px;
+		}
+		
+		#c1 {
+			width: 25%;
+		}
+		
+		#c2 {
+			width: 75%
+		}
+		
+		@media screen and (max-width: 700px) {
+			.column {
+				float: none;
+			}
+			#c1,
+			#c2 {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<img id="logo" src="img/logo.png">
+		<nav>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Portfolio</a>
+					<ul>
+						<li><a href="">Web Design</a></li>
+						<li><a href="">Web Dev</a></li>
+					</ul>
+				</li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 class="text-align:center;">This is a custom font</h1>
+	<div class="column" id="c1">
+		<h1>this is column 1</h1>
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="column" id="c2">
+		<h1>this is column 2</h1>
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<br style="clear:both;">
+</body>
+
 </html>
