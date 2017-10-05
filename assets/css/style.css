@@ -23,9 +23,9 @@ body{
 	background-attachment: fixed;
 }
 
-		h1, h2 {
-			font-family: 'Macondo', cursive;
-		}
+h1, h2 {
+	font-family: 'Macondo', cursive;
+}
 
 .title{
 	font-size:50px;
@@ -114,46 +114,46 @@ nav a:hover{
 	margin:0px auto;
 }
 
-
-/*	cascading experiment part 2 external*/
-h6{
-	font-size:10px;
-}
-
-h6{
-	font-size:30px;
-}
-
 #cascadecontainer{
 	text-align: center;
 	padding:100px;
 	background:#fff;
 }
-
-.cascading{
-	font-size:30px;
+/*	cascading experiment part 2 external*/
+/*inline a style before remove the comment below*/
+/*
+h6{
+	font-size:10px!important;
 }
-
-#cascade{
-	font-size:50px;
-}
-
-div h6{
-	font-size:20px;
-}
+*/
 
 html body div #cascade{
 	font-size: 40px;
-}
-
-div .cascading{
-	font-size:30px;
 }
 
 div #cascade{
 	font-size:80px;
 }
 
+#cascade{
+	font-size:50px;
+}
+
+div .cascading{
+	font-size:80px;
+}
+
+.cascading{
+	font-size:30px;
+}
+div h6{
+	font-size:20px;
+}
+
+/*start here, go down then stack on top of this going up*/
 h6{
-	font-size: 20px!important;
+	font-size: 20px;
+}
+h6{
+	font-size:10px;
 }

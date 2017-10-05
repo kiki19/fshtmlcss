@@ -123,8 +123,8 @@
 		flex-wrap:wrap;
 		justify-content:center;
 		align-items:center;
-		align-content:center;
-		height:500px;
+		align-content: center;
+		height:100vh;
 	}
 
 	.flexcontent{
@@ -140,19 +140,18 @@
 	#animation{
 		padding:20px;
 	}
+
 	@keyframes animename {
 		0%{
 			background:#628;
 			color:#fff;
 			transform: scale(1,1);
 		}
-
 		50%{
 			background:#fff;
 			color:#f73;
 			transform: scale(2,2);
 		}
-
 		100%{
 			background:#628;
 			color:#fff;
@@ -169,6 +168,9 @@
 	}
 
 /*	selectors*/
+	#selector p{
+		font-size: 30px;
+	}
 	.para, td {
 		color:#17d;
 	}
@@ -182,13 +184,13 @@
 		background-color:#f73;
 	}
 	td[rowspan="2"] ~ td {
-		padding: 15px;
+		font-weight: normal;
 	}
 	tr:first-of-type td {
 		color: #628;
 	}
-	table tr:last-of-type td {
-		color: #628;
+	tr:last-of-type td {
+		color: #000;
 	}
 	td:first-child{
 		border:1px #628 solid;
@@ -205,19 +207,19 @@
 	tr:nth-child(odd){
 		background-color: #9df;
 	}
-	
 	#selector > table > tbody > tr > td{
 		padding:15px;
 	}
 
 /*	cascading experiment part 3 inline*/
+/*
 	h6{
 		font-size:90px;
 	}
 	h6{
 		font-size:5px;
 	}
-
+*/
 
 /*	media query*/
 	.column {
@@ -332,11 +334,12 @@
 			<div class="floatThis">
 				<p>column 2</p>
 			</div>
-			<br style="clear:both;">
-			<p>remember to clear the float when done either with a br clear both of and ::after on the container</p>
-			
+			<br style="">
+			<p>remember to clear the float when done either with a br clear both or an :after on the container</p>
+		</div>
+		<div>
 			<p>
-				<img src="assets/img/pony3.png" style="float:left; width:80px; border-radius:50%;">
+				<img src="assets/img/pony3.png" style="">
 				Floats are originally used to wrap content. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>
